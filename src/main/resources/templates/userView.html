@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td th:if="${userView.name}" th:text="${userView.name}">Name</td>
+        <td th:if="${userView.user_id}" th:text="${userView.user_id}">UserId</td>
+        <td th:if="${userView.birthday}" th:text="${userView.birthday}">UserId</td>
+    </tr>
+</table>
+</body>
+</html>
